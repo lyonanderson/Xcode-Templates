@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the '___PROJECTNAME___' target in the '___PROJECTNAME___' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import "Three20/Three20+Additions.h"
+	#import "___PROJECTNAMEASIDENTIFIER___Config.h"
+	#import "LoggerClient.h"
+#endif
+
+#ifdef DEBUG
+#    define DLog(...) LogMessageCompat(__VA_ARGS__)
+#else
+#    define DLog(...) /* */
+#endif
